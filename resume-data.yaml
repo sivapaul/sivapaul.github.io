@@ -5,17 +5,17 @@
 
 personal:
   name: Sivakrishnakumar Paulraj
-  role: DevOps / Site Reliability Engineer
+  role: Principal Site Reliability Engineer
   phone: "(630) 899-9970"
   email: krishnan212@gmail.com
   linkedin: https://www.linkedin.com/in/sivakrishnakumar-paulraj-3b705444
   github: https://github.com/sivapaul
   summary: >
-    DevOps/SRE Engineer with 15+ years' experience in designing, implementing, 
-    and automating end-to-end Continuous Build, Integration, Delivery, Release 
-    and Deployment processes and pipelines. Strong expertise with modern pipeline 
-    technologies including Docker, Kubernetes, from creating initial Development 
-    Pipelines through to Production.
+    Principal Site Reliability Engineer with 15+ years' experience in designing, implementing, 
+    and automating end-to-end CI/CD pipelines and cloud infrastructure. Expertise in multi-cloud 
+    environments (AWS, Azure), Infrastructure as Code (Terraform, Ansible), and Kubernetes. 
+    Proven track record in leading cloud migration initiatives, building shared platform tooling, 
+    and driving SRE best practices across teams.
 
 # ═══════════════════════════════════════════════════════════════
 # SKILLS - Just add new items to the list!
@@ -72,10 +72,33 @@ skills:
 # EXPERIENCE - Most recent first!
 # ═══════════════════════════════════════════════════════════════
 experience:
+  - title: Principal Site Reliability Engineer
+    company: RELX
+    location: Remote - Virginia
+    duration: Dec 2022 - Present
+    responsibilities:
+      - Leading AWS to Azure cloud migration initiative, ensuring zero-downtime transition of critical production workloads
+      - Architecting and implementing GitHub Actions CI/CD pipelines for multi-environment deployments
+      - Developing Ansible automation integrated with GitHub Actions for consistent infrastructure deployments
+      - Collaborating with team to build shared Terraform modules for standardized infrastructure provisioning
+      - Designing and maintaining IaC pipelines for Kubernetes cluster provisioning and Azure infrastructure
+      - Providing production support and incident response for mission-critical systems
+      - Driving SRE best practices and process improvements across the team
+      - Mentoring team members and contributing architectural decisions for platform reliability
+    techStack:
+      - Azure
+      - AWS
+      - Terraform
+      - GitHub Actions
+      - Ansible
+      - Kubernetes
+      - Docker
+      - Python
+
   - title: Senior DevOps Engineer
     company: Compugain LLC
     client: Freddie Mac
-    duration: Nov 2021 - Present
+    duration: Nov 2021 - Dec 2022
     responsibilities:
       - Designed and implemented CI/CD processes using AWS, Jenkins, Bitbucket, JFrog, and Ansible
       - Implemented IaC pipeline using Jenkins shared library for CloudFormation template deployment
