@@ -1,3 +1,4 @@
+/* Dark Mode (default) */
 :root {
     --bg-primary: #0a0f14;
     --bg-secondary: #111920;
@@ -10,7 +11,66 @@
     --accent-orange: #f0883e;
     --border-color: #21262d;
     --gradient-1: linear-gradient(135deg, #00d4aa 0%, #58a6ff 100%);
+    --grid-color: rgba(0, 212, 170, 0.03);
 }
+
+/* Light Mode */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f6f8fa;
+    --bg-card: #ffffff;
+    --text-primary: #1f2328;
+    --text-secondary: #656d76;
+    --accent-cyan: #00a884;
+    --accent-blue: #0969da;
+    --accent-purple: #8250df;
+    --accent-orange: #cf6d1d;
+    --border-color: #d0d7de;
+    --gradient-1: linear-gradient(135deg, #00a884 0%, #0969da 100%);
+    --grid-color: rgba(0, 168, 132, 0.05);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--text-secondary);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    transform: scale(1.1);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+    transform: rotate(15deg);
+}
+
+/* Hide icons based on theme */
+.sun-icon { display: none; }
+.moon-icon { display: block; }
+
+[data-theme="light"] .sun-icon { display: block; }
+[data-theme="light"] .moon-icon { display: none; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -32,8 +92,8 @@ body {
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-image: 
-        linear-gradient(rgba(0, 212, 170, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 212, 170, 0.03) 1px, transparent 1px);
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -373,8 +433,8 @@ footer {
 footer a { color: var(--accent-cyan); text-decoration: none; }
 
 @media print {
+    .bg-grid, .theme-toggle { display: none; }
     body { background: white; color: #1a1a1a; }
-    .bg-grid { display: none; }
     .name-title h1 { background: none; -webkit-text-fill-color: #1a1a1a; }
     .experience-item, .skill-category, .project-card, .cert-badge, .contact-links a {
         background: #f5f5f5;
