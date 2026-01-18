@@ -1,0 +1,207 @@
+# ╔════════════════════════════════════════════════════════════════╗
+# ║  RESUME DATA - Edit this file to update your resume           ║
+# ║  The HTML will automatically render all changes               ║
+# ╚════════════════════════════════════════════════════════════════╝
+
+personal:
+  name: Sivakrishnakumar Paulraj
+  role: DevOps / Site Reliability Engineer
+  phone: "(630) 899-9970"
+  email: krishnan212@gmail.com
+  linkedin: https://www.linkedin.com/in/sivakrishnakumar-paulraj-3b705444
+  github: https://github.com/sivapaul
+  summary: >
+    DevOps/SRE Engineer with 15+ years' experience in designing, implementing, 
+    and automating end-to-end Continuous Build, Integration, Delivery, Release 
+    and Deployment processes and pipelines. Strong expertise with modern pipeline 
+    technologies including Docker, Kubernetes, from creating initial Development 
+    Pipelines through to Production.
+
+# ═══════════════════════════════════════════════════════════════
+# SKILLS - Just add new items to the list!
+# ═══════════════════════════════════════════════════════════════
+skills:
+  - category: Cloud & Virtualization
+    items:
+      - AWS
+      - Azure
+      - Kubernetes
+      - Docker
+
+  - category: Automation & IaC
+    items:
+      - Terraform
+      - Ansible
+      - Jenkins
+      - GitHub Actions
+      - CloudFormation
+
+  - category: Databases
+    items:
+      - Oracle
+      - MongoDB
+      - PostgreSQL
+      - DynamoDB
+      - MySQL
+
+  - category: Languages
+    items:
+      - Python
+      - Shell/Bash
+      - Groovy
+      - Java
+      - JavaScript
+
+  - category: App/Web Servers
+    items:
+      - Tomcat
+      - Apache
+      - Nginx
+      - JBoss
+      - HAProxy
+
+  - category: Monitoring
+    items:
+      - Prometheus
+      - Grafana
+      - Thanos
+      - Dynatrace
+      - Nagios
+
+# ═══════════════════════════════════════════════════════════════
+# EXPERIENCE - Most recent first!
+# ═══════════════════════════════════════════════════════════════
+experience:
+  - title: Senior DevOps Engineer
+    company: Compugain LLC
+    client: Freddie Mac
+    duration: Nov 2021 - Present
+    responsibilities:
+      - Designed and implemented CI/CD processes using AWS, Jenkins, Bitbucket, JFrog, and Ansible
+      - Implemented IaC pipeline using Jenkins shared library for CloudFormation template deployment
+      - Developed modular pipeline library (MPL) with highly flexible shared library for Jenkins pipelines
+      - Built pipelines for AWS Lambda functions with S3 bucket synchronization
+      - Created Docker images for Jenkins worker nodes supporting various application stacks
+      - Building modern delivery pipeline for Kubernetes clusters
+    techStack:
+      - AWS
+      - Linux
+      - Groovy
+      - Docker
+      - Kubernetes
+      - Ansible
+      - JFrog
+      - Jenkins
+
+  - title: DevOps and Support Lead
+    company: Accuity Inc.
+    duration: Aug 2016 - Nov 2021
+    responsibilities:
+      - Automated infrastructure provisioning pipeline using Terraform and Ansible
+      - Designed highly available production environment in new AWS region
+      - Migrated production environment from corporate network to AWS
+      - Implemented SFTP solution using AWS SFTP service with Cognito, S3, Lambda, DynamoDB
+      - Implemented multi-tenant Prometheus stack running behind Thanos
+      - Wrote custom monitoring scripts for self-healing solutions
+      - Provided 24/7 support as go-to person for production issues
+    techStack:
+      - AWS
+      - Terraform
+      - Docker
+      - Kubernetes
+      - Prometheus
+      - Grafana
+      - Thanos
+      - Python
+
+  - title: Technology Lead
+    company: Infosys Limited
+    duration: Jan 2014 - Aug 2016
+    responsibilities:
+      - Managed infrastructure deployments for online site
+      - Server configuration using Ansible during OS/ATG upgrades
+      - Managed CI for online deployment with Jenkins administration
+      - Led upgrade activities Java 7 to 8, RHEL 5.11 to 6.7, ATG 11.0 to 11.2
+      - Managed cluster of 20 app servers and monitored performance
+      - Configured traffic control using Akamai and F5 load balancing
+    techStack:
+      - Linux
+      - ATG
+      - JBoss
+      - Jenkins
+      - Ansible
+      - Python
+      - Dynatrace
+
+  - title: Technology Analyst
+    company: Infosys Limited
+    duration: Mar 2011 - Jan 2014
+    responsibilities:
+      - Monitored site functionality and provided first level troubleshooting
+      - Managed deployment procedures and maintained site stability
+      - Handled Graphite and Nagios alerts with appropriate actions
+    techStack:
+      - JBoss
+      - Apache
+      - Jenkins
+      - Graphite
+      - Nagios
+
+  - title: Sr. Software Engineer
+    company: Infosys Limited
+    duration: Jul 2007 - Mar 2011
+    responsibilities:
+      - Provided production support and L2 support 24/7
+      - Developed Java standalone application to track document transactions
+      - Led team of 8 members, preparing SLA reports
+    techStack:
+      - Java
+      - Sterling
+      - XSLT
+      - XML
+      - SQL
+
+# ═══════════════════════════════════════════════════════════════
+# PROJECTS - Add new projects here!
+# ═══════════════════════════════════════════════════════════════
+projects:
+  - name: Multi-Environment CI/CD Pipeline
+    description: Consolidated deployment pipeline for Azure Function Apps supporting dev, staging, and production environments with automated rollback.
+    techStack:
+      - GitHub Actions
+      - Terraform
+      - Azure
+      - Python
+
+  - name: SRE Dashboard
+    description: Full-stack infrastructure management dashboard for monitoring servers, URLs, and Kubernetes clusters across multiple environments.
+    techStack:
+      - React
+      - Node.js
+      - MongoDB
+      - Express
+
+  - name: Watchlist Sync Monitor
+    description: Azure Function for monitoring watchlist version synchronization across multiple environments with three-tier status alerting.
+    techStack:
+      - Azure Functions
+      - Python
+      - SMB
+      - REST API
+
+  - name: Self-Healing Infrastructure
+    description: Custom monitoring scripts integrated into deployment processes to automatically detect and remediate common infrastructure issues.
+    techStack:
+      - Python
+      - Prometheus
+      - Ansible
+      - Shell
+
+# ═══════════════════════════════════════════════════════════════
+# CERTIFICATIONS
+# ═══════════════════════════════════════════════════════════════
+certifications:
+  - name: AWS Solutions Architect
+    year: "2020"
+  # - name: CKA - Kubernetes Administrator
+  #   year: "2025"
