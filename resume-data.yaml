@@ -162,40 +162,24 @@ experience:
       - SQL
 
 # ═══════════════════════════════════════════════════════════════
-# PROJECTS - Add new projects here!
+# PROJECTS - Add your projects here!
+# Uncomment and fill in when you have projects to add
 # ═══════════════════════════════════════════════════════════════
-projects:
-  - name: Multi-Environment CI/CD Pipeline
-    description: Consolidated deployment pipeline for Azure Function Apps supporting dev, staging, and production environments with automated rollback.
-    techStack:
-      - GitHub Actions
-      - Terraform
-      - Azure
-      - Python
-
-  - name: SRE Dashboard
-    description: Full-stack infrastructure management dashboard for monitoring servers, URLs, and Kubernetes clusters across multiple environments.
-    techStack:
-      - React
-      - Node.js
-      - MongoDB
-      - Express
-
-  - name: Watchlist Sync Monitor
-    description: Azure Function for monitoring watchlist version synchronization across multiple environments with three-tier status alerting.
-    techStack:
-      - Azure Functions
-      - Python
-      - SMB
-      - REST API
-
-  - name: Self-Healing Infrastructure
-    description: Custom monitoring scripts integrated into deployment processes to automatically detect and remediate common infrastructure issues.
-    techStack:
-      - Python
-      - Prometheus
-      - Ansible
-      - Shell
+projects: []
+  # TEMPLATE - Copy, uncomment, and fill in:
+  # - name: Project Name
+  #   description: Brief description of what it does
+  #   techStack:
+  #     - Tech1
+  #     - Tech2
+  #
+  # EXAMPLE:
+  # - name: SRE Dashboard
+  #   description: Full-stack dashboard for monitoring servers and K8s clusters
+  #   techStack:
+  #     - React
+  #     - Node.js
+  #     - MongoDB
 
 # ═══════════════════════════════════════════════════════════════
 # CERTIFICATIONS
