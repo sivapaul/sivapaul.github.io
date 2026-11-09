@@ -11,62 +11,84 @@ personal:
   linkedin: https://www.linkedin.com/in/sivakrishnakumar-paulraj-3b705444
   github: https://github.com/sivapaul
   summary: >
-    Principal Site Reliability Engineer with 15+ years' experience in designing, implementing, 
-    and automating end-to-end CI/CD pipelines and cloud infrastructure. Expertise in multi-cloud 
-    environments (AWS, Azure), Infrastructure as Code (Terraform, Ansible), and Kubernetes. 
-    Proven track record in leading cloud migration initiatives, building shared platform tooling, 
-    and driving SRE best practices across teams.
+    Principal Site Reliability Engineer with 19 years in IT engineering and operations, the last 10+
+    in DevOps and SRE. Runs a multi-region compliance SaaS platform on Azure Kubernetes Service and AWS
+    across the US, EU and APAC, from building new regions end to end to leading production incident
+    response. Deep hands-on expertise in Kubernetes, Helm, ArgoCD, Envoy Gateway, Terraform, Ansible and
+    GitHub Actions, with a strong focus on observability, vulnerability remediation and cloud cost.
+    Known for turning recurring operational pain into reusable tooling and for explaining complex
+    incidents clearly to engineers and leadership alike.
 
 # ═══════════════════════════════════════════════════════════════
 # SKILLS - Just add new items to the list!
 # ═══════════════════════════════════════════════════════════════
 skills:
-  - category: Cloud & Virtualization
+  - category: Cloud
     items:
-      - AWS
-      - Azure
-      - Kubernetes
+      - Azure (AKS, Functions, PostgreSQL)
+      - AWS (EC2, Lambda, Step Functions, S3)
+      - Cloudflare
+
+  - category: Kubernetes Platform
+    items:
+      - Kubernetes / AKS
+      - Helm
+      - ArgoCD
+      - Envoy Gateway
+      - cert-manager
+      - External Secrets
+      - ECK (Elasticsearch)
       - Docker
 
   - category: Automation & IaC
     items:
       - Terraform
       - Ansible
-      - Jenkins
       - GitHub Actions
+      - Jenkins
       - CloudFormation
+
+  - category: Observability
+    items:
+      - Prometheus
+      - Grafana
+      - OpenTelemetry
+      - ELK Stack
+      - Thanos
+      - Dynatrace
+
+  - category: Security
+    items:
+      - Wiz
+      - Akeyless
+      - CVE Remediation
+      - CIS Hardening
+      - TLS / PKI
 
   - category: Databases
     items:
-      - Oracle
-      - MongoDB
       - PostgreSQL
-      - DynamoDB
+      - Elasticsearch
+      - MongoDB
       - MySQL
+      - Oracle
+      - DynamoDB
 
   - category: Languages
     items:
       - Python
       - Shell/Bash
+      - JavaScript / React / Node.js
       - Groovy
       - Java
-      - JavaScript
 
   - category: App/Web Servers
     items:
       - Tomcat
-      - Apache
       - Nginx
-      - JBoss
+      - Spring Boot
+      - Apache
       - HAProxy
-
-  - category: Monitoring
-    items:
-      - Prometheus
-      - Grafana
-      - Thanos
-      - Dynatrace
-      - Nagios
 
 # ═══════════════════════════════════════════════════════════════
 # EXPERIENCE - Most recent first!
@@ -77,22 +99,32 @@ experience:
     location: Remote - Virginia
     duration: Dec 2022 - Present
     responsibilities:
-      - Leading AWS to Azure cloud migration initiative, ensuring zero-downtime transition of critical production workloads
-      - Architecting and implementing GitHub Actions CI/CD pipelines for multi-environment deployments
-      - Developing Ansible automation integrated with GitHub Actions for consistent infrastructure deployments
-      - Collaborating with team to build shared Terraform modules for standardized infrastructure provisioning
-      - Designing and maintaining IaC pipelines for Kubernetes cluster provisioning and Azure infrastructure
-      - Providing production support and incident response for mission-critical systems
-      - Driving SRE best practices and process improvements across the team
-      - Mentoring team members and contributing architectural decisions for platform reliability
+      - Lead reliability for ComplianceLink, a multi-region compliance SaaS platform on Azure AKS and AWS spanning US, EU and APAC production environments
+      - Built new regional environments end to end, including APAC, Central US and Sweden Central, covering Terraform, ArgoCD, Envoy Gateway, cert-manager and External Secrets with Akeyless, through to application go-live
+      - Leading the AWS to Azure migration of critical production workloads with zero-downtime cutovers
+      - Created and maintain a shared Helm library chart used by 31+ Spring Boot microservices, standardizing JVM memory sizing, Envoy Gateway routing with circuit breakers, backend TLS, IP allowlists, PDBs and VPA
+      - Led the US production move to Envoy Gateway and resolved the resulting Sev1 (HTTP/1.0, header and large-payload handling) through client traffic policy tuning
+      - Lead production incident response across Azure PostgreSQL, Elasticsearch and Spring Boot services, diagnosing transaction leaks, lock contention and OOM cascades, and writing plain-English incident reports for leadership
+      - Analyzed 8,000+ Wiz findings with Python and pandas to prioritize a remediation plan covering ~7,600 findings, patched 36 production servers for a critical CVE, and upgraded the ECK operator from 2.11 to 3.3
+      - Identified ~$12.5K per month of orphaned EBS snapshot spend and built a Lambda cost anomaly monitor with EventBridge and SNS alerting
+      - Built a Prometheus and Grafana stack scraping JMX and Spring Boot Actuator metrics across 14 production hosts, and fixed the OpenTelemetry pipeline that delayed Envoy access logs into ELK by 15 minutes
+      - Containerized Python Azure Function Apps with custom images and GitHub Actions pipelines, and built Ansible roles for CIS-hardened Ubuntu Pro hosts with Akeyless secret injection
+      - Built serverless data pipelines on Azure Functions and AWS Lambda/Step Functions, including SMB to S3/Blob file transfer with checksum verification and bulk PostgreSQL loads using COPY
+      - Mentor engineers and drive SRE practices including runbooks, restore testing and standardized automation
     techStack:
       - Azure
+      - AKS
       - AWS
       - Terraform
+      - Helm
+      - ArgoCD
+      - Envoy Gateway
       - GitHub Actions
       - Ansible
-      - Kubernetes
-      - Docker
+      - Prometheus
+      - OpenTelemetry
+      - Elasticsearch
+      - PostgreSQL
       - Python
 
   - title: Senior DevOps Engineer
@@ -105,7 +137,7 @@ experience:
       - Developed modular pipeline library (MPL) with highly flexible shared library for Jenkins pipelines
       - Built pipelines for AWS Lambda functions with S3 bucket synchronization
       - Created Docker images for Jenkins worker nodes supporting various application stacks
-      - Building modern delivery pipeline for Kubernetes clusters
+      - Built a modern delivery pipeline for Kubernetes clusters
     techStack:
       - AWS
       - Linux
@@ -186,23 +218,23 @@ experience:
 
 # ═══════════════════════════════════════════════════════════════
 # PROJECTS - Add your projects here!
-# Uncomment and fill in when you have projects to add
 # ═══════════════════════════════════════════════════════════════
-projects: []
-  # TEMPLATE - Copy, uncomment, and fill in:
-  # - name: Project Name
-  #   description: Brief description of what it does
-  #   techStack:
-  #     - Tech1
-  #     - Tech2
-  #
-  # EXAMPLE:
-  # - name: SRE Dashboard
-  #   description: Full-stack dashboard for monitoring servers and K8s clusters
-  #   techStack:
-  #     - React
-  #     - Node.js
-  #     - MongoDB
+projects:
+  - name: ImmiDesk
+    description: Open-source public dashboard that brings US immigration data onto one page, including Visa Bulletin movement, USCIS processing times, visa appointment wait times, and rule changes with automatically extracted deadlines. In development.
+    techStack:
+      - Python
+      - React
+      - GitHub Actions
+      - Federal Register API
+
+  - name: SRE Command Center
+    description: Full-stack dashboard for tracking servers, URLs, EC2 details and clusters across environments, with incident and SLO/error budget tracking, SFTP user management and an SRE toolbox (cron parser, CIDR calculator).
+    techStack:
+      - React
+      - Node.js
+      - Express
+      - MongoDB Atlas
 
 # ═══════════════════════════════════════════════════════════════
 # CERTIFICATIONS
